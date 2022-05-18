@@ -1,0 +1,27 @@
+// Tugas TIK Sidney Laura Wong XIMIA
+//P – NISN Ganjil = Program Konversi dari Dollar ke Rupiah dan sebaliknya, menggunakan pemilihan dan input output
+#include <iostream>
+using namespace std;
+int main()
+{
+	float hasil;
+	int a,b;
+	string arr[3] = {"","Dollar","Rupiah"};
+	cout<<"1. Dollar"<<endl;
+	cout<<"2. Rupiah"<<endl;
+	cout<<"Pilih uang awal: ";cin>>a;
+	cout<<"Masukan Uang: ";cin>>hasil;
+	cout<<"1. Dollar"<<endl;
+	cout<<"2. Rupiah"<<endl;
+	cout<<"Pilih konversi: ";cin>>b;
+	
+	if(a==1 && b==2){
+		cout<<"Hasil: "<<hasil*14.464<<" Rupiah";
+	}
+	else if(a==2 && b==1){
+		cout<<"Hasil: "<<hasil/14.464<<" Dollar";
+	}
+	else if(a==b){
+		cout<<"Hasil :"<<hasil<<" "<<arr[b];
+	}
+}
